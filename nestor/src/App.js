@@ -1,24 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
+import Box from '@material-ui/core/Box';
+import TextField from '@material-ui/core/TextField';
+import "./index.css"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Router>
+      <div className="App">
+        {/* <Navbar /> */}
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              {/* <Home /> */}
+            </Route>
+            <Route path="/rucha">
+              {/* Rucha enter component here */}
+            </Route>
+            <Route path="/nick">
+              {/* Nick enter component here */}
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
+    // <div className="App">
+    //   <Box className="box" component="span" m={1} >
+    //     <TextField label="Sina" className="box"></TextField>
+    //   </Box>
+    // </div>
   );
 }
 
