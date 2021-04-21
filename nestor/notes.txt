@@ -1,0 +1,20 @@
+<<<<<<<<{{{ commit 80a5d564d4fe2fdb51a9a314ea13275a415494d8 }}}>>>>>>>>>
+Initialised node and modules
+> npm init -y
+> npm install react react-dom
+
+Not we can simply run "npm install" whith the package.json to get all the necessary
+node modules
+
+Then we installed more necessary modules:
+> npm install @babel/core @babel/preset-env @babel/preset-react babel-loader
+
+<<<<<<<<{{{ commit 5616f316aae78e9323fd132676ad2b5cb106bc9c }}}>>>>>>>>
+Beginning implementation of the "Experience_cards"
+- I think the maximised cards would be good if they were "react-boostrap/Form"
+- And then minimised cards would be nice if they were "react-boostrap/Card"
+
+- Created Experience_cards_max.js
+- imported a default card, along with import statements
+- installed "react-boostrap"
+    > npm install react-bootstrap bootstrap

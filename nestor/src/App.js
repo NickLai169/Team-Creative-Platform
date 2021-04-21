@@ -4,6 +4,7 @@ import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
 import "./index.css"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Experience_card_max from "./Experience_card_max.js"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               {/* Rucha enter component here */}
             </Route>
             <Route path="/nick">
+              Experience_card_max
               {/* Nick enter component here */}
             </Route>
           </Switch>
