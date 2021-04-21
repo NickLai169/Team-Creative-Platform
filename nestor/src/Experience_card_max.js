@@ -1,60 +1,59 @@
 // import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
+// import { Button, InputGroup, FormControl, Col } from 'bootstrap/dist/css/bootstrap.min.css';
+import Col from 'bootstrap/dist/css/bootstrap.min.css';
+import InputGroup from 'bootstrap/dist/css/bootstrap.min.css';
+import FormControl from 'bootstrap/dist/css/bootstrap.min.css';
+import { Row } from 'react-bootstrap';
+
+
 
 const Experience_card_max = () => {
-    return (
-        <Form>
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group controlId="formGridAddress1">
-                <Form.Label>Address</Form.Label>
-                <Form.Control placeholder="1234 Main St" />
-            </Form.Group>
-
-            <Form.Group controlId="formGridAddress2">
-                <Form.Label>Address 2</Form.Label>
-                <Form.Control placeholder="Apartment, studio, or floor" />
-            </Form.Group>
-
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                <Form.Label>City</Form.Label>
-                <Form.Control />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridState">
-                <Form.Label>State</Form.Label>
-                <Form.Control as="select" defaultValue="Choose...">
-                    <option>Choose...</option>
-                    <option>...</option>
-                </Form.Control>
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                <Form.Label>Zip</Form.Label>
-                <Form.Control />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group id="formGridCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
-        </Form>
-    )
+  return (
+      <div>
+        <Form.Group controlId="formBasicEmail">
+            <Form.Label>Description</Form.Label>
+            <Form.Control type="description" placeholder="Description" />
+        </Form.Group>
+        
+        <Form.Row className="align-items-center">
+            <Form.Label htmlFor="inlineFormInputName" srOnly>
+                Name
+            </Form.Label>
+            <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+            <Row>
+                <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+                <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
+            </Row>
+            {/* <Col sm={3} className="my-1">
+            <Form.Label htmlFor="inlineFormInputGroupUsername" srOnly>
+                Username
+            </Form.Label>
+            <InputGroup>
+                <FormControl id="inlineFormInputGroupUsername" placeholder="Username" />
+            </InputGroup>
+            </Col>
+            <Col xs="auto" className="my-1">
+            <Form.Check type="checkbox" id="autoSizingCheck2" label="Remember me" />
+            </Col>
+            <Col xs="auto" className="my-1">
+            <Button type="submit">Submit</Button>
+            </Col> */}
+        </Form.Row>
+      </div>
+      
+    // <nav className="navbar">
+    //   <h1>The Dojo Blog</h1>
+    //   <div className="links">
+    //     <Link to="/">Home</Link>
+    //     <Link to="/create" style={{ 
+    //       color: 'white', 
+    //       backgroundColor: '#f1356d',
+    //       borderRadius: '8px' 
+    //     }}>New Blog</Link>
+    //   </div>
+    // </nav>
+  );
 }
-
-export default Experience_card_max
+ 
+export default Experience_card_max;

@@ -18,3 +18,7 @@ Beginning implementation of the "Experience_cards"
 - imported a default card, along with import statements
 - installed "react-boostrap"
     > npm install react-bootstrap bootstrap
+- Created a new branch "Nick-Experience-cards" to work on
+
+I managed to shove some stuff together into a page. Need to figure out how to turn it
+into a "card" with a specific background colour and borders thought.

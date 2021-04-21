@@ -23,8 +23,8 @@ function App() {
               {/* Rucha enter component here */}
             </Route>
             <Route path="/nick">
-              Experience_card_max
               {/* Nick enter component here */}
+              { Experience_card_max }
             </Route>
           </Switch>
         </div>
