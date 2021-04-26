@@ -5,9 +5,11 @@ import TextField from '@material-ui/core/TextField';
 import "./index.css"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Experience_card_max from "./Experience_card_max.js"
+import React, {useState} from 'react';
 
 
 function App() {
+  const [count, setCount] = useState(0);
   
   return (
     
@@ -24,7 +26,7 @@ function App() {
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}
-              { Experience_card_max }
+              <Experience_card_max/>
             </Route>
           </Switch>
         </div>

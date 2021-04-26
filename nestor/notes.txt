@@ -22,3 +22,25 @@ Beginning implementation of the "Experience_cards"
 
 I managed to shove some stuff together into a page. Need to figure out how to turn it
 into a "card" with a specific background colour and borders thought.
+
+
+<<<<<<<<{{{ commit 55092f6f95691531e73838dbdbc42a038d6415e2 }}}>>>>>>>>
+Let's really figure out how CSS works properly
+
+- Created Experience_cards.css
+- Created Experience_card_database.json
+
+Note that to manually serve a database the command is:
+> npx json-server --watch [file address] --port [custom port number]
+
+
+
+
+
+
+
+
+
+
+
+[end]
