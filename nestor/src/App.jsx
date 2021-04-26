@@ -1,22 +1,30 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Box from '@material-ui/core/Box';
 import TextField from '@material-ui/core/TextField';
 import "./index.css"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import Sidebar from './components/Sidebar';
+import Dash from './images/dash.png'
+import Image from 'react-bootstrap/Image'
 
 function App() {
+  
+  const [count, setCount] = useState(0);
+
+  
   
   return (
     
     <Router>
       <div className="App">
         {/* <Navbar /> */}
+        <Sidebar />
         <div className="content">
           <Switch>
             <Route exact path="/">
-              {/* <Home /> */}
+              <Image src={Dash} rounded className="dash" />
             </Route>
             <Route path="/rucha">
               {/* Rucha enter component here */}

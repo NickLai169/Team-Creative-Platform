@@ -12,15 +12,40 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
 * {
-  margin: 0;
-  font-family: "Quicksand";
-  color: #333;
+  /* margin: 0; */
+  font-family: "Futura";
 }
-.navbar {
+
+.logo {
+  width: 140px;
+  padding-left: 30px;
+  
+}
+
+.user_img {
+  width: 45px;
+  height: 45px;
+  right: 0;
+  position: absolute;
+  margin-right: 20px;
+  box-shadow: -5px 5px 5px  rgba(121, 119, 119, 0.6);}
+
+.dash {
+  object-fit: cover;
+  width: 1100px;
+}
+/* .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
@@ -49,7 +74,7 @@ code {
 }
 
 /* blog previews / list */
-.blog-preview {
+/* .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
@@ -67,7 +92,7 @@ code {
 }
 
 /* blog details page */
-.blog-details h2 {
+/* .blog-details h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 10px;
@@ -82,10 +107,10 @@ code {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
 
 /* create new blog form */
-.create {
+/* .create {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
@@ -96,7 +121,7 @@ code {
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #FFAD00;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -114,4 +139,4 @@ code {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-}
+}  */
