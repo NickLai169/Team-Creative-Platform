@@ -8,20 +8,53 @@ import FormControl from 'bootstrap/dist/css/bootstrap.min.css';
 // import { Row } from 'react-bootstrap';
 import "./Experience_cards.css";
 import useFetch from "./useFetch";
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
-
+// class InputTag extends React.Component {
+//     constructor() {
+//       super();
+      
+//       this.state = {
+//         tags: [
+//           'Tags',
+//           'Input'
+//         ]
+//       };
+//     }
+    
+//     removeTag = (i) => {
+//       const newTags = [ ...this.state.tags ];
+//       newTags.splice(i, 1);
+//       this.setState({ tags: newTags });
+//     }
+  
+//     inputKeyDown = (e) => {
+//       const val = e.target.value;
+//       if (e.key === 'Enter' && val) {
+//         if (this.state.tags.find(tag => tag.toLowerCase() === val.toLowerCase())) {
+//           return;
+//         }
+//         this.setState({ tags: [...this.state.tags, val]});
+//         this.tagInput.value = null;
+//       } else if (e.key === 'Backspace' && !val) {
+//         this.removeTag(this.state.tags.length - 1);
+//       }
+//     }
+// }
 
 const Experience_card_max = (props) => {
     // const [count, setCount] = useState(0);
-    const [experiences, setExperiences] = useState([
+    // const tag_fella = new InputTag();
+    // const tags = tag_fella.state;
+    const [experience, setExperience] = useState([
         {
           experience_type: "work",
           icon: "https://www.preipobuzz.com/wp-content/uploads/2020/08/1_Q41fN5j195jaksG8An983g-1024x1024.jpg",
           description: "SWE at Kiwibot :D\n",
           start_date: "January 2019",
           currently_here: false,
-          end_date: "March 2020"
+          end_date: "March 2020",
+          tags: ["Project", "SWE", "Web Design", "Unpaid Internship", "Startup"]
         },
         {
           experience_type: "Education",
@@ -29,9 +62,10 @@ const Experience_card_max = (props) => {
           description: "Student at UCB :D\n",
           start_date: "January 2019",
           currently_here: true,
-          end_date: "N/A"
+          end_date: "N/A",
+          tags: ["Hello", "DarknesS", "my", "old", "Friend"]
         }
-      ]);
+      ])[0];
 
     // const [experiences, setExperiences] = useState(null);
     // const [isPending, setIsPending] = useState(true);
@@ -57,8 +91,6 @@ const Experience_card_max = (props) => {
     // const image = experiences.icon;
     // const description = experiences.description;
 
-    const experience = experiences[0];
-
     
     return (
         <div>
@@ -79,25 +111,43 @@ const Experience_card_max = (props) => {
                         <Form.Control type="text" class="entry-box" placeholder={ experience.description }/>
                     </Form.Group>
 
-                    <Row>
-                        <h4 class="card-titles-dates-start">
-                            Start Date
-                        </h4>
-                        <h4 class="card-titles-dates-end">
-                            End Date
-                        </h4>
+                    <Form.Group>
                         <Row>
-                            <Col style={{paddingLeft: 20px}}>
+                            <Col>
+                                <h4 class="card-titles-dates-start">
+                                    Start Date
+                                </h4>
                                 <Form.Control type="text" size="sm" class="entry-box" placeholder={ experience.start_date }/>
                             </Col>
                             <Col>
+                                <h4 class="card-titles-dates-end">
+                                    End Date
+                                </h4>
                                 <Form.Control type="text" size="sm" class="entry-box" placeholder={ experience.end_date }/>
                             </Col>
+                            <Col>
+                                <br/>
+                                <br/>
+                                <Form.Check 
+                                    type="switch"
+                                    id="custom-switch"
+                                    label="Currently Here"
+                                />
+                            </Col>
                         </Row>
-                    </Row>
-                    <br />
-                    <br />
-                    <br />
+                    </Form.Group>
+
+                    
+                    <Form.Group>
+                        <Row>
+                            <Col>
+                                <h4 class="card-titles">
+                                    Tags
+                                </h4>
+                                <Form.Control type="text" size="sm" class="entry-box" placeholder="tags"/>
+                            </Col>
+                        </Row>
+                    </Form.Group>
                     <br />
                 </body>
             </Form>
