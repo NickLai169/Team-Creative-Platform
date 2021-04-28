@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Dash from './images/dash.png'
 import Image from 'react-bootstrap/Image'
+import MyJurnee from './components/MyJurnee';
 
 function App() {
   
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path="/rucha">
               {/* Rucha enter component here */}
+            </Route>
+            <Route path="/myjurnee">
+              <MyJurnee />
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}

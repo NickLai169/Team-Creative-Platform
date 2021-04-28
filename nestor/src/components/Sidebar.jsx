@@ -9,6 +9,7 @@ import { IconContext } from 'react-icons/lib';
 import logo from '../images/logo.jpeg'
 import userimage from '../images/sdalir.jpg'
 import Image from 'react-bootstrap/Image'
+import { useHistory } from "react-router-dom";
 
 const Nav = styled.div`
   background: #FFB600;
@@ -46,8 +47,9 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [sidebar, setSidebar] = useState(false);
+  const history = useHistory();
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -56,7 +58,7 @@ const Sidebar = () => {
       <IconContext.Provider value={{ color: 'white' }}>
         <Nav>
             
-            <img src={logo}  className='logo'/>
+            <img src={logo}  className='logo' onClick={() => history.push('/')}/>
           <NavIcon to='#' >
             <FaIcons.FaBars  onClick={showSidebar}  />
           </NavIcon>
