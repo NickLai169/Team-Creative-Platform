@@ -3,14 +3,7 @@ import styled from 'styled-components';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import * as BsIcons from 'react-icons/bs';
-// import * as FaIcons from 'react-icons/fa';
-// import * as AiIcons from 'react-icons/ai';
-// import { SidebarData } from './SidebarData';
-// import SubMenu from './SubMenu';
-// import { IconContext } from 'react-icons/lib';
-// import logo from '../images/logo.jpeg'
-// import userimage from '../images/sdalir.jpg'
-// import Image from 'react-bootstrap/Image'
+
 
 const VerticalTimelineWrap = styled.div`
   background: #fff;
@@ -23,9 +16,7 @@ const VerticalTimelineWrap = styled.div`
 
 
 const MyJurnee = () => {
-//   const [sidebar, setSidebar] = useState(false);
 
-//   const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>

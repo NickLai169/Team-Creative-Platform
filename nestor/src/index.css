@@ -39,7 +39,7 @@ code {
   right: 0;
   position: absolute;
   margin-right: 20px;
-  box-shadow: -5px 5px 5px  rgba(121, 119, 119, 0.6);}
+  box-shadow: -5px 5px 5px  rgba(4,12,76);}
 
 .dash {
   object-fit: cover;
@@ -47,7 +47,7 @@ code {
 }
 
 .vertical-timeline::before  {
-  background: #FFB600 !important;
+  background: #20368f !important;
 }
 /* .navbar {
   padding: 20px;
