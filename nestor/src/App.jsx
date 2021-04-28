@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar';
 import Dash from './images/dash.png'
 import Image from 'react-bootstrap/Image'
 import MyJurnee from './components/MyJurnee';
+import Recruiter_review_applicants from './components/Recruiter_review_applicants'
 
 function App() {
   
@@ -35,6 +36,7 @@ function App() {
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}
+              <Recruiter_review_applicants/>
             </Route>
           </Switch>
         </div>

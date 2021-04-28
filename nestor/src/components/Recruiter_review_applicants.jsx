@@ -4,6 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import * as BsIcons from 'react-icons/bs';
 
+
 const Recruiter_review_applicants = () => {
     return (
         <>
