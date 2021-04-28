@@ -9,8 +9,9 @@ import Sidebar from './components/Sidebar';
 import Dash from './images/dash.png'
 import Image from 'react-bootstrap/Image'
 import MyJurnee from './components/MyJurnee';
-
+import Experience_card_max from "./Experience_card_max.js"
 function App() {
+  const [count, setCount] = useState(0);
   
   const [count, setCount] = useState(0);
 
@@ -35,6 +36,7 @@ function App() {
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}
+              <Experience_card_max/>
             </Route>
           </Switch>
         </div>

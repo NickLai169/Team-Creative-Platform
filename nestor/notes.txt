@@ -1,0 +1,46 @@
+<<<<<<<<{{{ commit 80a5d564d4fe2fdb51a9a314ea13275a415494d8 }}}>>>>>>>>>
+Initialised node and modules
+> npm init -y
+> npm install react react-dom
+
+Not we can simply run "npm install" whith the package.json to get all the necessary
+node modules
+
+Then we installed more necessary modules:
+> npm install @babel/core @babel/preset-env @babel/preset-react babel-loader
+
+<<<<<<<<{{{ commit 5616f316aae78e9323fd132676ad2b5cb106bc9c }}}>>>>>>>>
+Beginning implementation of the "Experience_cards"
+- I think the maximised cards would be good if they were "react-boostrap/Form"
+- And then minimised cards would be nice if they were "react-boostrap/Card"
+
+- Created Experience_cards_max.js
+- imported a default card, along with import statements
+- installed "react-boostrap"
+    > npm install react-bootstrap bootstrap
+- Created a new branch "Nick-Experience-cards" to work on
+
+I managed to shove some stuff together into a page. Need to figure out how to turn it
+into a "card" with a specific background colour and borders thought.
+
+
+<<<<<<<<{{{ commit 55092f6f95691531e73838dbdbc42a038d6415e2 }}}>>>>>>>>
+Let's really figure out how CSS works properly
+
+- Created Experience_cards.css
+- Created Experience_card_database.json
+
+Note that to manually serve a database the command is:
+> npx json-server --watch [file address] --port [custom port number]
+
+
+
+
+
+
+
+
+
+
+
+[end]
