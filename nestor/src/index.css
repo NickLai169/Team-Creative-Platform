@@ -41,6 +41,57 @@ code {
   margin-right: 20px;
   box-shadow: -5px 5px 5px  rgba(121, 119, 119, 0.6);}
 
+.description {  
+    /* background-color: blue; */
+    position: relative; 
+    margin-left: 20px;
+    /* top: 0, left: 0, 
+    right: 0, bottom: 0,  */
+    text-align: left;
+    font-family: "futura";
+    src: local("Futura"),
+      url("./fonts/Futura Book font.ttf") format("truetype");
+    font-weight: normal; }
+
+.imageList {
+  margin-left: 100px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.listPic {
+  /* right: 250;
+  top: 500;
+  left: 0; 
+  bottom: 100; */
+  width: 600px !important;
+  /* height: 800px; */
+  margin-right: 100px;
+  position: relative;
+}
+
+.buttonJurnee {
+  margin-left: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.boxes { 
+  position: relative; 
+  margin-right: 2000px;
+  margin-top: 50px;
+  width: 400px;
+  height: 125px;
+}
+
+.topBox {
+  position: relative; 
+  margin-right: 2000px;
+  margin-top: 200px;
+  width: 400px;
+  height: 125px;
+}
+
 .dash {
   object-fit: cover;
   width: 1100px;
