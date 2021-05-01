@@ -7,7 +7,7 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import logo from '../images/logo.png'
-import userimage from '../images/sdalir.jpg'
+import userimage from '../images/user.jpg'
 import Image from 'react-bootstrap/Image'
 import { useHistory } from "react-router-dom";
 

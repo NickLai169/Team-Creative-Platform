@@ -99,6 +99,12 @@ export const WatchListData = [
             img: <Image src={udemy} className="watchlistimg" />
             
             },
+            {
+              title: 'Marketing Intern',
+              description: 'A short course to help freelances and graphic design firm principals build more profitable and rewarding businesses.',
+              img: <Image src={udemy} className="watchlistimg" />
+              
+              },
     ];
 
 export const strides = [
@@ -111,11 +117,11 @@ export const strides = [
     
     },
     {
-      title: 'Creative Director',
-      location: 'Miami Florida',
+      title: 'Marathon Runner',
+      location: 'Boston, MA',
       date: "",
       img: <Image src={kiwi} className="vertical-timeline-element-img" roundedCircle />,
-      description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+      description: ""
       
       },
       {
