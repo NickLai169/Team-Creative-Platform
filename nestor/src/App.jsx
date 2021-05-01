@@ -9,10 +9,10 @@ import Sidebar from './components/Sidebar';
 import Dash from './images/dash.png'
 import Image from 'react-bootstrap/Image'
 import MyJurnee from './components/MyJurnee';
+import Recruiter_review_applicants from './components/Recruiter_review_applicants'
 import Experience_card_max from "./Experience_card_max.js"
 import WatchList from './components/WatchList';
 import Apply from './components/Apply'
-
 
 
 function App() {
@@ -46,7 +46,8 @@ function App() {
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}
-              <Experience_card_max/>
+              <Recruiter_review_applicants/>
+
             </Route>
           </Switch>
         </div>
