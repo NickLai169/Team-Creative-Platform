@@ -10,6 +10,11 @@ import Dash from './images/dash.png'
 import Image from 'react-bootstrap/Image'
 import MyJurnee from './components/MyJurnee';
 import Experience_card_max from "./Experience_card_max.js"
+import WatchList from './components/WatchList';
+import Apply from './components/Apply'
+
+
+
 function App() {
   const [count, setCount] = useState(0);
   
@@ -31,7 +36,13 @@ function App() {
               {/* Rucha enter component here */}
             </Route>
             <Route path="/myjurnee">
-              <MyJurnee />
+              <MyJurnee recruiter={false}/>
+            </Route>
+            <Route path="/watchlist">
+              <WatchList />
+            </Route>
+            <Route path="/apply">
+              <Apply />
             </Route>
             <Route path="/nick">
               {/* Nick enter component here */}

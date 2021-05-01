@@ -49,6 +49,155 @@ code {
 .vertical-timeline::before  {
   background: #20368f !important;
 }
+
+.vertical-timeline-element-title {
+  color: #fff;
+}
+
+.vertical-timeline-element-subtitle {
+  color: #fff;
+}
+
+.vertical-timeline-element-img {
+  object-fit:contain;
+  margin-top: 2px;
+  width: 55px;
+}
+
+.demo-loadmore-list {
+  min-height: 350px;
+  margin-top: 40px !important;
+
+}
+
+.recom-list {
+  min-height: 350px;
+  margin-top: 20px !important;
+
+}
+
+
+
+.watchlisttitle {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #20368f;
+  /* position:relative; */
+  border-bottom: 3px solid #20368f;
+}
+
+
+.watchlistitem {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  left: 30px;
+  text-align: left;
+  color: #20368f;
+}
+
+.watchlistdesc {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  left: 50px;
+  text-align: left;
+  color: #6d6d6d;
+}
+
+.watchlistbutton {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  color: #323232;
+}
+
+.watchlistbutton:hover {
+  color: #000b4f;
+}
+
+
+
+.watchlistimg {
+  object-fit:contain;
+  width: 100px;
+}
+
+
+#top-nav {
+  position: fixed;
+  top: 100px;
+  height: 60px;
+  width: 100%;
+ 
+}
+
+#wrapper {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+#side-nav {
+  position: fixed;
+  width: 650px;
+  height:50vh;
+  overflow-y: scroll;
+  
+}
+
+#content-wrapper {
+  margin: 60px 0 0 650px;
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.compatibility  {
+  width: 80px;
+  height: 150px;
+  right: 0px;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 50px;
+  stroke: #323232 !important;
+}
+
+.compatibilityTitle  {
+  width: 500px;
+  height: 100px;
+  right: 0px;
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight:lighter;
+  position: relative;
+  margin-left: 220px;
+  /* margin-bottom: 30px; */
+  margin-top: 30px;
+  color: #20368f !important;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #20368f !important;
+}
+
+.applyRecom {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  margin-top: 100px;
+  color: #20368f;
+  position:relative;
+  border-bottom: 3px solid #20368f;
+}
 /* .navbar {
   padding: 20px;
   display: flex;
