@@ -10,7 +10,7 @@ import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 import styled from 'styled-components';
 import * as BsIcons from 'react-icons/bs';
-import userimage from 'c:/Users/rucha/Desktop/indeng185/Team-Creative-Platform/nestor/src/images/checkList.jpg';
+import userimage from '../images/checkList.jpg';
 import Button from 'react-bootstrap/Button';
 //import {Container, Row, Col} from 'react-bootstrap/Container';
 import Container from 'react-bootstrap/Container';
