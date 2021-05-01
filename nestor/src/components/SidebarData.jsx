@@ -95,7 +95,7 @@ export const WatchListData = [
         },
         {
             title: 'Product Marketing Lead',
-            description: 'We are looking for an amazing, data-driven inbound marketer to own the majority of the marketing funnel for our company. You will be in charge of attracting site traffic, converting that traffic into new leads for the business, and nurturing those leads to close into customers, the latter of which sales leadership will help you accomplish.',
+            description: 'A short course to help freelances and graphic design firm principals build more profitable and rewarding businesses.',
             img: <Image src={udemy} className="watchlistimg" />
             
             },
