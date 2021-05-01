@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import * as BsIcons from 'react-icons/bs';
-// import * as FaIcons from 'react-icons/fa';
-// import * as AiIcons from 'react-icons/ai';
-// import { SidebarData } from './SidebarData';
-// import SubMenu from './SubMenu';
-// import { IconContext } from 'react-icons/lib';
-// import logo from '../images/logo.jpeg'
-// import userimage from '../images/sdalir.jpg'
-// import Image from 'react-bootstrap/Image'
+import {strides, recruiterStride} from './SidebarData'
+
 
 const VerticalTimelineWrap = styled.div`
   background: #fff;
@@ -22,71 +15,37 @@ const VerticalTimelineWrap = styled.div`
 
 
 
-const MyJurnee = () => {
-//   const [sidebar, setSidebar] = useState(false);
 
-//   const showSidebar = () => setSidebar(!sidebar);
+const MyJurnee = (props) => {
 
+    const [jurneeStrides, setJurneeStrides] = useState(strides)
+
+    useEffect(() => {
+        if (props.recruiter == true) {
+            setJurneeStrides(recruiterStride)
+        }
+       
+    }, [])
   return (
     <>
     <VerticalTimelineWrap>
       <VerticalTimeline animate={ Boolean } >
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<BsIcons.BsFillBriefcaseFill />}
-        >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<BsIcons.BsFillBriefcaseFill />}
-        >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<BsIcons.BsFillBriefcaseFill />}
-        >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<BsIcons.BsFillBriefcaseFill />}
-        >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-            Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-        </VerticalTimelineElement>
+          {jurneeStrides.map((stride) => (
+              <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(32,54,143,255)', color: '#6d6d6d' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(32,54,143,255)' }}
+              date={stride.date}
+              iconStyle={{ background: 'rgb(130,156,208,255)', color: '#fff' }}
+              icon={stride.img}
+          >
+              <h3 className="vertical-timeline-element-title">{stride.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">{stride.location}</h4>
+              <p>
+              {stride.description}
+              </p>
+          </VerticalTimelineElement>
+          ))}
     </VerticalTimeline>
     </VerticalTimelineWrap>
     </>

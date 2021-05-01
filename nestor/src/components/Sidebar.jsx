@@ -6,13 +6,13 @@ import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
-import logo from '../images/logo.jpeg'
-import userimage from '../images/sdalir.jpg'
+import logo from '../images/logo.png'
+import userimage from '../images/user.jpg'
 import Image from 'react-bootstrap/Image'
 import { useHistory } from "react-router-dom";
 
 const Nav = styled.div`
-  background: #FFB600;
+  background: #24348c;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -30,7 +30,7 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #FFB600;
+  background: #24348c;
   width: 250px;
   height: 80vh;
   display: flex;
