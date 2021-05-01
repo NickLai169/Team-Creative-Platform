@@ -71,6 +71,59 @@ export const SidebarData = [
 ];
 
 
+export const SidebarRecruiter = [
+  {
+      title: 'Overview',
+      path: '/',
+      icon: <AiIcons.AiFillAppstore />,
+      iconClosed: <RiIcons.RiArrowDownSFill />,
+      iconOpened: <RiIcons.RiArrowUpSFill />,
+      },
+    {
+      title: 'Job Listings',
+      path: '/joblistings',
+      icon: <FaIcons.FaWaveSquare />
+    },
+    {
+      title: 'Applicants',
+      path: '/applicants',
+      icon: <AiIcons.AiFillHeart />
+    },
+    
+    {
+      title: 'Contacts',
+      path: '/team',
+      icon: <IoIcons.IoMdPeople />
+    },
+    {
+      title: 'Messages',
+      path: '/messages',
+      icon: <FaIcons.FaEnvelopeOpenText />,
+  
+      iconClosed: <RiIcons.RiArrowDownSFill />,
+      iconOpened: <RiIcons.RiArrowUpSFill />,
+  
+      subNav: [
+        {
+          title: 'Message 1',
+          path: '/messages/message1',
+          icon: <IoIcons.IoIosPaper />
+        },
+        {
+          title: 'Message 2',
+          path: '/messages/message2',
+          icon: <IoIcons.IoIosPaper />
+        }
+      ]
+    },
+    {
+      title: 'Support',
+      path: '/support',
+      icon: <IoIcons.IoMdHelpCircle />
+    }
+  ];
+
+
 export const WatchListData = [
     {
         title: 'Back End Software Engineer',

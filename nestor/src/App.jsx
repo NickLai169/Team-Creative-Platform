@@ -27,7 +27,7 @@ function App() {
     <Router>
       <div className="App">
         {/* <Navbar /> */}
-        <Sidebar />
+        <Sidebar recruiter={true} />
         <div className="content">
           <Switch>
             <Route exact path="/">
@@ -45,7 +45,7 @@ function App() {
             <Route path="/apply">
               <Apply />
             </Route>
-            <Route path="/nick">
+            <Route path="/joblistings">
               {/* Nick enter component here */}
               <Recruiter_review_applicants/>
 
