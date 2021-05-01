@@ -1,0 +1,20 @@
+{
+    "experiences": [
+      {
+        "experience_type": "work",
+        "icon": "https://www.preipobuzz.com/wp-content/uploads/2020/08/1_Q41fN5j195jaksG8An983g-1024x1024.jpg",
+        "description": "SWE at Kiwibot :D\n",
+        "start_date": "January 2019",
+        "currently_here": false,
+        "end_date": "March 2020"
+      },
+      {
+        "experience_type": "Education",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Seal_of_University_of_California%2C_Berkeley.svg/1200px-Seal_of_University_of_California%2C_Berkeley.svg.png",
+        "description": "Student at UCB :D\n",
+        "start_date": "January 2019",
+        "currently_here": true,
+        "end_date": "N/A"
+      }
+    ]
+  }
