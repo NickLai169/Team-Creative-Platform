@@ -101,6 +101,31 @@ code {
   color: #20368f;
 }
 
+
+.recruiterReviewJobs {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  color: #000b4f;
+}
+
+.recruiterReviewExpand {
+  font-family: "futura";
+  src: local("Futura"),
+    url("./fonts/Futura Book font.ttf") format("truetype");
+  font-weight: normal;
+  background-color: #000b4f;
+  color: #fff;
+}
+
+.recruiterReviewCompatibility  {
+  width: 80px;
+  height: 180px;  
+  margin-top: 20px;
+  stroke: #323232 !important;
+}
+
 .watchlistdesc {
   font-family: "futura";
   src: local("Futura"),

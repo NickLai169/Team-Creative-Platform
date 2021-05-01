@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col} from 'reactstrap';
 import styled from 'styled-components';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import * as BsIcons from 'react-icons/bs';
 
@@ -124,10 +123,10 @@ const Recruiter_review_applicants = (props) => {
     const listJobs = jobListing.map((job) =>
         <Row className="justify-content-md-center">
             <Col xs lg="3">
-                <h4>{job.job_title}</h4>
+                <h4 className="recruiterReviewJobs">{job.job_title}</h4>
             </Col>
             <Col xs lg="1">
-                <button onClick= {expandJob(job)}> Expand </button>
+                <button onClick= {expandJob(job)} className="recruiterReviewExpand"> Expand </button>
             </Col>
             <Col xs lg="2">
                 <h4>{job.confirmed_hires}/{job.total_positions}</h4>
@@ -144,7 +143,7 @@ const Recruiter_review_applicants = (props) => {
     
     return (
         <>
-            <h1>
+            <h1 className="watchlisttitle">
                 Your Position Listings
             </h1>
             <Row className="justify-content-md-center">
@@ -166,10 +165,10 @@ const Recruiter_review_applicants = (props) => {
             {listJobs}
             <Row className="justify-content-md-center">
                 <Col xs lg="3">
-                    <h4 onClick= {() => {expandSoloListing()}}>{soloListing.job_title}</h4>
+                    <h4 onClick= {() => {expandSoloListing()}} className="recruiterReviewJobs">{soloListing.job_title}</h4>
                 </Col>
                 <Col xs lg="1">
-                    <button onClick= {() => {expandSoloListing()}}> Expand </button>
+                    <button onClick= {() => {expandSoloListing()}} className="recruiterReviewExpand"> Expand </button>
                 </Col>
                 <Col xs lg="2">
                     <h4>{soloListing.confirmed_hires}/{soloListing.total_positions}</h4>
@@ -199,14 +198,14 @@ const Recruiter_review_applicants = (props) => {
                                     </Col>
                                     <Col>
                                         <Image src={generic_pic} thumbnail/>
-                                        <div style={{ width: 150, fontSize: 14, marginTop: -5, paddingLeft: 60}}>
+                                        <div style={{ width: 150, fontSize: 14, marginTop: 10, paddingLeft: 60}}>
                                             <CircularProgressbarWithChildren value={90}>
                                                 <strong> {90}% Completion</strong>
                                             </CircularProgressbarWithChildren>
                                         </div>
                                     </Col>
                                 </Row>
-                                <Image src={sample_journee1}/>
+                                <Image src={sample_journee1} style={{width:300, marginTop: 20}}/>
                             </Col>
                             <Col/>
                             <Col xs lg="3">
@@ -216,7 +215,7 @@ const Recruiter_review_applicants = (props) => {
                                     </Col>
                                     <Col>
                                         <Image src={arnav_profile_pic} style={{ width:120 }} thumbnail/>
-                                        <div style={{ width: 150, fontSize: 14, marginTop: -5, paddingLeft: 60}}>
+                                        <div style={{ width: 150, fontSize: 14, marginTop: 10, paddingLeft: 60}}>
                                             <CircularProgressbarWithChildren value={75}>
                                                 <strong> {75}% Completion</strong>
                                             </CircularProgressbarWithChildren>
@@ -226,7 +225,7 @@ const Recruiter_review_applicants = (props) => {
                                 <div>
 
                                 </div>
-                                <Image src={sample_journee2} style={{ width:300}}/>
+                                <Image src={sample_journee2} style={{ width:300, marginTop: 20}}/>
                             </Col>
                         </Row>
                     </Container>  
