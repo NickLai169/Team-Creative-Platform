@@ -101,7 +101,8 @@ const Recruiterchecklist = () => {
             <Row className="justify-content-md-center">
                 <Heading
                     fontSize={[ 5, 6, 7 ]}
-                    color='primary'>
+                    color='primary'
+                    style={{fontFamily: "futura", color: "#000b4f", marginTop: 10}}>
                     <FaIcons.FaWaveSquare /> 
                     Recruiter's Portal
                 </Heading>

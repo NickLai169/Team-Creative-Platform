@@ -33,7 +33,7 @@ function App() {
             <Route exact path="/">
               <Image src={Dash} rounded className="dash" />
             </Route>
-            <Route path="/rucha">
+            <Route path="/addJob">
               <Recruiterchecklist />
             </Route>
             <Route path="/myjurnee">

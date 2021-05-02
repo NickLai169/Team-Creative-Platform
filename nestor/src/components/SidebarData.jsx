@@ -4,8 +4,16 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 import * as BsIcons from 'react-icons/bs';
+import tiktok from "../images/tiktok.png"
 import kiwi from '../images/kiwi.jpg'
+import amazon from '../images/amazon.png'
 import berk from '../images/berk.png'
+import study from '../images/studyabroad.jpeg'
+import uma from '../images/uma.png'
+import thetachi from '../images/thetachi.png'
+import notion from '../images/notion.png'
+import boston from '../images/boston.png'
+import santamonica from '../images/santamonica.png'
 import coursera from '../images/coursera.png'
 import udemy from '../images/udemy.png'
 import cannaboba from '../images/cannaboba.png'
@@ -85,6 +93,11 @@ export const SidebarRecruiter = [
       icon: <FaIcons.FaWaveSquare />
     },
     {
+      title: 'Add Job Listing',
+      path: '/addjob',
+      icon: <AiIcons.AiOutlinePlusCircle />
+    },
+    {
       title: 'Applicants',
       path: '/applicants',
       icon: <AiIcons.AiFillHeart />
@@ -137,6 +150,12 @@ export const WatchListData = [
             img: <Image src={cannaboba} className="watchlistimg" />
             
             },
+            {
+              title: 'Program Manager',
+              description: 'We are looking for a Project Manager to be responsible for organizing programs and activities for our organization. You will be tasked with developing programs to support the organization\'s strategic direction, as well as creating and managing long term goals. You will also be in charge of developing budgets and operating plans for programs and writing program funding proposals.',
+              img: <Image src={notion} className="watchlistimg" />
+              
+              },
     ];
 
   export const RecommendationList = [
@@ -162,37 +181,78 @@ export const WatchListData = [
 
 export const strides = [
   {
-    title: 'Business & Administration',
-    location: 'UC Berkeley',
-    date: "2011 - 2014",
-    img: <Image src={berk} className="vertical-timeline-element-img" roundedCircle/>,
-    description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    title: 'Rellocate to California',
+    location: 'London, UK',
+    date: "2011",
+    img: <RiIcons.RiFlightTakeoffFill />,
+    description: "Immigrated from London to California to live in the states with family"
+    
+    },
+  {
+    title: 'Business',
+    location: 'Santa Monica Community College',
+    date: "2011 - 2013",
+    img: <Image src={santamonica} className="vertical-timeline-element-img" roundedCircle/>,
+    description: "Business Administration, Python, Photoshop, Excel, Finance"
     
     },
     {
       title: 'Marathon Runner',
       location: 'Boston, MA',
-      date: "",
-      img: <Image src={kiwi} className="vertical-timeline-element-img" roundedCircle />,
-      description: ""
+      date: "2011-2012",
+      img: <Image src={boston} className="vertical-timeline-element-img" roundedCircle />,
+      description: "Trained and ran a 15k marathon"
       
       },
+  {
+    title: 'Business & Administration',
+    location: 'UC Berkeley',
+    date: "2013 - 2016",
+    img: <Image src={berk} className="vertical-timeline-element-img" roundedCircle/>,
+    description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    
+    },
       {
-        title: 'Creative Director',
-        location: 'Miami Florida',
-        date: "",
-        img: <Image src={kiwi} className="vertical-timeline-element-img" roundedCircle />,
-        description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+        title: 'Undergraduate Marketing Association',
+        location: 'UC Berkeley',
+        date: "2014-2015",
+        img: <Image src={uma} className="vertical-timeline-element-img" roundedCircle />,
+        description: "Marketing consulting for big firms such as Microsoft, Facebook, Jans, etc.  "
         
         },
         {
-          title: 'Creative Director',
-          location: 'Miami Florida',
-          date: "",
-          img: <Image src={kiwi} className="vertical-timeline-element-img" roundedCircle/>,
-          description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+          title: 'Study Abroad',
+          location: 'Barcelona, Spain',
+          date: "Summer 2014",
+          img: <Image src={study} className="vertical-timeline-element-img" roundedCircle/>,
+          description: "Learned Spanish, international business and partipitated in Spain's start-up contest"
           
           },
+          {
+            title: 'President',
+            location: 'Theta Chi, UC Berkeley',
+            date: "2015-2016",
+            img: <Image src={thetachi} className="vertical-timeline-element-img" roundedCircle/>,
+            description: "President of lambda chapter, cordinating between nationals and house. In charge of all events and philantropy"
+            
+            },
+          {
+            title: 'Marketing Intern',
+            location: 'Amazon',
+            date: "Summer 2015",
+            img: <Image src={amazon} className="vertical-timeline-element-img" roundedCircle/>,
+            description: "Identify and measure KPI. Execute campain, work cross functionally with design and product team"
+            
+            },
+            {
+              title: 'TikTok Content Creator',
+              location: 'Berkeley, CA',
+              date: "2016-present",
+              img: <Image src={tiktok} className="vertical-timeline-element-img" roundedCircle/>,
+              description: "Identify and measure KPI. Execute campain, work cross functionally with design and product team",
+              video: true
+              
+              },
 ];
 
 

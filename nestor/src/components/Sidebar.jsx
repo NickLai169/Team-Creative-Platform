@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import { SidebarData, SidebarRecruiter } from './SidebarData';
+import { SidebarData, SidebarRecruiter  } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import logo from '../images/logo.png'
@@ -62,7 +62,10 @@ const Sidebar = (props) => {
           <NavIcon to='#' >
             <FaIcons.FaBars  onClick={showSidebar}  />
           </NavIcon>
+          <span className="user">
+            <h3 className="userName">Adam P</h3>
           <Image src={userimage} className='user_img' roundedCircle />
+          </span>
         </Nav>
         <div>
         <SidebarNav sidebar={sidebar}>
@@ -70,12 +73,11 @@ const Sidebar = (props) => {
             <NavIcon to='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
-            {(props.recruiter) ? 
+            { props.recruiter ? 
             SidebarRecruiter.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })
-            :
-            SidebarData.map((item, index) => {
+            : SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })}
           </SidebarWrap>

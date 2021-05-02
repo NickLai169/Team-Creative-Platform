@@ -39,7 +39,21 @@ code {
   right: 0;
   position: absolute;
   margin-right: 20px;
+  margin-bottom: 20px;
   box-shadow: -5px 5px 5px  rgba(4,12,76);}
+
+  .user {
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+    display: flex;
+    }
+  .userName {
+    font-size:medium;
+    margin-right: 80px;
+    margin-top: 20px;
+    color: #fff;
+  }
 
 .description {  
     /* background-color: blue; */
@@ -242,8 +256,9 @@ code {
   position: relative;
   margin-left: 0px;
   margin-top: 50px;
-  stroke: #323232 !important;
 }
+
+
 
 .compatibilityTitle  {
   width: 500px;
@@ -259,9 +274,16 @@ code {
   margin-top: 30px;
   color: #20368f !important;
 }
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #6d6d6d !important;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
 
 .CircularProgressbar .CircularProgressbar-path {
   stroke: #20368f !important;
+  
 }
 
 .applyRecom {

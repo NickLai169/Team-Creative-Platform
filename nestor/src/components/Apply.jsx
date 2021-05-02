@@ -38,7 +38,7 @@ const Apply = () =>   {
                 <h1 className="watchlisttitle">Apply: (Drag your strides into each slot of application)</h1>
                 <MyJurnee recruiter={false}/>
                 <h1 className="compatibilityTitle">Jurnee comparison to application Jurnee</h1>
-            <CircularProgressbar value={80} text={`${80}%`}  className="compatibility" /> 
+            <CircularProgressbar value={80} text={`${90}%`}  className="compatibility" /> 
              <h1 className="applyRecom">Recommendations to better your Jurnee</h1>
              <List
             className="recom-list"
